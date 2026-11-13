@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "export-reconciler"
+version = "0.1.0"
+description = "Compare local CSV and Excel exports and generate a reviewable Excel exception report."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["openpyxl>=3.1,<4"]
+
+[project.scripts]
+export-reconcile = "export_reconciler.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
