@@ -1,0 +1,8 @@
+{
+  "key": {"left": "Customer ID", "right": "Record Number"},
+  "fields": [
+    {"name": "Date of birth", "left": "Birth Date", "right": "DOB", "comparison": "date", "right_format": "%d/%m/%Y"},
+    {"name": "Nationality", "left": "Nationality", "right": "Country", "comparison": "casefold"},
+    {"name": "ID expiry", "left": "ID Expiry", "right": "Expiry Date", "comparison": "date", "right_format": "%d/%m/%Y", "grace_days": 90}
+  ]
+}
